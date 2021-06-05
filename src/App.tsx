@@ -1,3 +1,4 @@
+import React from "react";
 import './App.css';
 import Content from "./components/Content/Content";
 import {createMuiTheme, ThemeProvider} from "@material-ui/core";
@@ -30,13 +31,14 @@ const theme = createMuiTheme({
     }
 })
 
-const App = () => {
+const App: React.FC = () => {
     return (
-        <ThemeProvider theme={theme}>
-            <div className="App">
-                <Content/>
-            </div>
-        </ThemeProvider>
+        // <ThemeProvider theme={theme}>
+        //     <div className="App">
+        //         <Content/>
+        //     </div>
+        // </ThemeProvider>
+        <h1>HELLO!</h1>
     );
 }
 
